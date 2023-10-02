@@ -102,7 +102,7 @@ nav{
  #sectionsecond{
    display: flex;
    width: 1485px;
-   margin:27px 216px;
+   margin:27px 25px;
    overflow: scroll;
    justify-content: center; 
     align-items: center;
@@ -122,7 +122,7 @@ nav{
 
 #sectionthree{
    width: 1585px;
-   margin:5px 198px;
+   margin:5px 10px;
    
 }
 #firstline img, #secondline img{
@@ -136,7 +136,7 @@ nav{
    display: flex;
    justify-content: space-between;
    width: 1464px;
-   margin:25px 230px;
+   margin:25px 45px;
 }
 
 .heading h2{
@@ -217,7 +217,7 @@ text-overflow: ellipsis;
    overflow-x: auto; /* Enable horizontal scrolling */
    justify-content: flex-start; /* Align the boxes to the left */
    white-space: nowrap;
-   margin: 5px 220px;
+   margin: 5px 31px 200px 31px;
 }
 
 .box {
