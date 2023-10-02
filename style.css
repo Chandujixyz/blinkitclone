@@ -234,3 +234,15 @@ text-overflow: ellipsis;
    overflow: hidden;
    white-space: normal; /* Allow text to wrap */
 }
+
+/* ============== footer ================== */
+footer img{
+   height: 25px;
+}
+footer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 50px;
+}
+
