@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* -------------Navigation bar------------------------------- */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86px;
+    width: 100%;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    background-color: white;
+    flex-wrap: wrap;
+    position:sticky; /* Set the navbar to fixed position */
+  top: 0;
+     
+}
+
+/* logo */
+#logo{
+    width: 15%;
+     height: 100%;
+    border-right: 1px solid rgb(238, 238, 238);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+#logo img{
+    height: 37px; 
+}
+
+/* address */
+ #address{
+    text-align: center;
+    width: 20%;
+    margin: 0px 20px;
+    
+ }
+
+ /* Search bar */
+
+ #search{
+    display: flex;
+    border: 1px solid rgb(232, 232, 232);
+    width: 35%;
+    height: 50%;
+    border-radius: 12px;
+    background: rgb(248, 248, 248);
+    align-items: center;
+ }
+ #searchicon{
+    margin: 10px;
+ }
+ #searchbox input{
+    border: none;
+    background: rgb(248, 248, 248);
+ }
+
+ /* logIn */
+ #login button{
+  
+    margin-left: 50px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+     
+ }
+/* My cart */
+ #MyCart button{
+    background-color: rgb(12, 131, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 52px ;
+    width: 112px;
+    border-radius: 8px;
+    margin-left: 50px;
+ }
+ #cart{
+   font-size: 16px;
+   margin: 10px;
+ }
+
+
+
+ /* ----------section first ---------- */
+ #sectionfirst{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ #sectionfirst img{
+   height: 300px;
+   width: 1516px;
+ }
+
+
+ /* ---------------section Second -------- */
+ #sectionsecond{
+   display: flex;
+   width: 1485px;
+   margin:27px 216px;
+   overflow: scroll;
+   justify-content: center; 
+    align-items: center;
+   display:inline-block !important;
+   white-space: nowrap;
+ }
+ #sectionsecond img{
+   padding-inline: 8px;
+ }
+
+ ::-webkit-scrollbar{
+   display: none;
+}
+
+
+/* -------------section three ---------------------- */
+
+#sectionthree{
+   width: 1585px;
+   margin:5px 198px;
+   
+}
+#firstline img, #secondline img{
+   margin: 11px;  
+}
+
+
+/* ++++++++++++++heading+++++++++++++++++++++++ */
+
+.heading{
+   display: flex;
+   justify-content: space-between;
+   width: 1464px;
+   margin:25px 230px;
+}
+
+.heading h2{
+   font-size:28px;
+}
+
+.heading button{
+    border: none;
+    font-size: 20px;
+    color: rgb(12, 131, 31);
+    background-color: white;
+    font-size: 20px;
+}
+
+/*+++++++++++++++++++++ section four+++++++++++++++++++++ */
+ /* .box{
+   width: 225px;
+   height: 350px;
+   margin: 15px;
+   cursor: pointer;
+   background: rgb(255, 255, 255);
+   border: 0.5px solid rgb(232, 232, 232);
+   box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+   border-radius: 8px;
+   overflow: hidden;
+ } */
+ .product{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .time{
+   display: flex;
+   margin: 15px;
+ }
+ .time p{
+   font-size: 12px;
+   font-weight: 300;
+ }
+.box h2{
+font-size:27px;
+margin: 5px 10px;
+white-space: nowrap;
+overflow: hidden; 
+text-overflow: ellipsis;
+}
+.weight{
+   font-size: 20px;
+   font-weight: 400;
+   color: gray;
+   margin: 20px 10px;
+}
+.price{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 20px;
+}
+.price p{
+   font-weight: 500;
+}
+.price button{
+   cursor: pointer;
+   width: 66px;
+   border: 1px solid rgb(49, 134, 22);
+   height: 31px;
+   color: rgb(49, 134, 22);
+   font-weight: 600;
+   font-size: 13px;
+}
+
+ 
+
+ #sectionfour {
+   display: flex;
+   width: 1476px; /* Use 100% width to fill the available space */
+   overflow-x: auto; /* Enable horizontal scrolling */
+   justify-content: flex-start; /* Align the boxes to the left */
+   white-space: nowrap;
+   margin: 5px 220px;
+}
+
+.box {
+   width: 225px; /* Set a fixed width for the boxes */
+   margin: 0 15px; /* Add horizontal margin to separate boxes */
+   flex-shrink: 0; /* Prevent boxes from shrinking */
+   box-sizing: border-box; /* Include padding and border in box sizing */
+   display: inline-block; /* Display boxes inline */
+   vertical-align: top; /* Align boxes to the top */
+   background: rgb(255, 255, 255);
+   border: 0.5px solid rgb(232, 232, 232);
+   box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+   border-radius: 8px;
+   overflow: hidden;
+   white-space: normal; /* Allow text to wrap */
+}
