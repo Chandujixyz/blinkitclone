@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blinkitClone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./blinkitclone.css">
 </head>
 <body>
 
     <!--------- navigation bar ------------- -->
-    <header>
     <nav>
 <!-- logo -->
         <div id="logo">
@@ -17,91 +16,174 @@
                 <img src="https://thelogofinder.com/wp-content/uploads/2022/08/Blinkit.svg" alt="" class="img-fluid">
                 </a>
         </div>
+
+        
 <!-- Address -->
-        <div id="address">
+        <div id="address" class="laptop">
             <h2>Deliver in 11 minutes</h2>
             <div id="location">
-                <p>gorakhpur Uttar Pradesh  <img src="   https://cdn-icons-png.flaticon.com/512/57/57055.png " width="15" height="15" alt="" title=""></p>
+                <p>gorakhpur Uttar Pradesh</p>
+                <img src="   https://cdn-icons-png.flaticon.com/512/57/57055.png " width="15" height="15" alt="" title="">
             </div>
         </div>
+     
 <!-- Search bar -->
-        <div id="search">
+        <div id="search" class="laptop">
             <div id="searchicon">
                 <img src="   https://cdn-icons-png.flaticon.com/512/54/54481.png " width="15" height="15" alt="" title="" >
             </div>
 
-            <div id="searchbox">
-                <form action="sg">
-                    <input type="text" placeholder="Search &#34Milk&#34">
-                </form>
+            <div class="searchbox" >
+                    <div class="Tbox">
+                        <div class="a"> Search &#34 curd &#34 </div>
+                        <div class="a">Search &#34 milk &#34</div>
+                        <div class="a">Search &#34 egg &#34</div>
+                        <div class="a">Search &#34 rice &#34</div>
+                        <div class="a">Search &#34 sugar &#34</div>
+                        <div class="a">Search &#34 chips &#34</div>
+                    </div> 
             </div>
         </div>
+   
 <!-- log In -->
 
-<div id="login">
+<div id="login" class="laptop">
     <button class="btn btn-lg">Login</button>
 </div>
 
-<!-- My cart -->
+
+
+
+<!-- My cart  laptop-->
 <div id="MyCart">
     <button> 
          
-        <div id="carticon"><img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" width="25" height="25" alt="Shopping cart free icon" title="Shopping cart free icon">
+        <div id="carticon">
+            <a href="https://www.freeiconspng.com/img/28356" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/basket-cart-icon-27.png" alt="basket cart icon" /></a>
         </div>
-        <div id="cart"> My cart</div>
-        
+        <div class="cart"> My cart</div>    
     </button>
 </div>
+<!-- My cart  mobile-->
+<div id="MyCart" class="mobile">
+    <button> 
+         
+        <div id="carticon" >
+            <a href="https://www.freeiconspng.com/img/28356" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/basket-cart-icon-27.png" alt="basket cart icon" /></a>
+            <div>
+                <p class="q">1item</p>
+                <p class="p">₹95</p>
+            </div>
+        </div>
+
+        <div class="cart">
+            <p>View Cart</p>
+            
+        </div>    
+    </button>
+</div>
+<!--+++++++++++++++ mobile nav ++++++++++== -->
+
+<nav id="navbar-mobile" class="mobile">
+
+<div class="address-acount">
+    <!-- Address -->
+    <div id="address" class="mobile">
+        <h2>Deliver in 11 minutes</h2>
+        <div id="location">
+            <p>village, Bhitni, Dohariya, Bajar gorakhpur Uttar Pradesh</p>
+            <img src="   https://cdn-icons-png.flaticon.com/512/57/57055.png " width="15" height="15" alt="" title="">
+        </div>
+    </div>
+    <!-- login -->
+    <div id="login" class="mobile">
+        <button><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 5.33317C10.1089 5.33317 5.33329 10.1088 5.33329 15.9998C5.33329 21.8909 10.1089 26.6665 16 26.6665C21.891 26.6665 26.6666 21.8909 26.6666 15.9998C26.6666 10.1088 21.891 5.33317 16 5.33317ZM2.66663 15.9998C2.66663 8.63604 8.63616 2.6665 16 2.6665C23.3638 2.6665 29.3333 8.63604 29.3333 15.9998C29.3333 23.3636 23.3638 29.3332 16 29.3332C8.63616 29.3332 2.66663 23.3636 2.66663 15.9998Z" fill="black"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 10.6667C14.5272 10.6667 13.3333 11.8606 13.3333 13.3333C13.3333 14.8061 14.5272 16 16 16C17.4727 16 18.6666 14.8061 18.6666 13.3333C18.6666 11.8606 17.4727 10.6667 16 10.6667ZM10.6666 13.3333C10.6666 10.3878 13.0544 8 16 8C18.9455 8 21.3333 10.3878 21.3333 13.3333C21.3333 16.2789 18.9455 18.6667 16 18.6667C13.0544 18.6667 10.6666 16.2789 10.6666 13.3333Z" fill="black"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.2674 23.2783C10.3653 23.6502 9.8256 24.2056 9.46237 25.1467C9.19724 25.8337 8.42539 26.1757 7.73839 25.9106C7.0514 25.6454 6.70941 24.8736 6.97455 24.1866C7.59355 22.5827 8.65364 21.4714 10.2512 20.8129C11.7534 20.1936 13.6722 20 15.9998 20C18.3392 20 20.2689 20.1812 21.775 20.7938C23.3847 21.4487 24.4443 22.5677 25.0551 24.1993C25.3132 24.8889 24.9634 25.6572 24.2737 25.9154C23.5841 26.1735 22.8157 25.8237 22.5576 25.1341C22.199 24.176 21.666 23.6284 20.7702 23.2639C19.7707 22.8573 18.2817 22.6667 15.9998 22.6667C13.7457 22.6667 12.2649 22.8671 11.2674 23.2783Z" fill="black"></path></svg></button>
+    </div>
+</div>
+
+
+<div id="search-mobile" class="mobile">
+    <div id="searchicon-mobile">
+        <img src="   https://cdn-icons-png.flaticon.com/512/54/54481.png " width="15" height="15" alt="" title="" >
+    </div>
+
+    <div class="searchbox-mobile" >
+            <div class="Tbox-mobile">
+                <div class="a-mobile"> Search &#34 curd &#34 </div>
+                <div class="a-mobile">Search &#34 milk &#34</div>
+                <div class="a-mobile">Search &#34 egg &#34</div>
+                <div class="a-mobile">Search &#34 rice &#34</div>
+                <div class="a-mobile">Search &#34 sugar &#34</div>
+                <div class="a-mobile">Search &#34 chips &#34</div>
+            </div> 
+    </div>
+</div>
+</nav>
+
     </nav>
-        </header>
+
+
     
 
     <!-------------- Section first ----------------- -->
 
-    <section id="sectionfirst">
-        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=1440/layout-engine/2022-05/Group-33704.jpg" alt="paan corner banner" width="1280" height="234.8623853211009" loading="eager" style="border-radius: 0px; object-fit: fill; cursor: default;">
+    <section  id="sectionfirst" class="l">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=1440/layout-engine/2022-05/Group-33704.jpg" alt="paan corner banner">
     </section>
+    <section id="sectionfirst-mobile">
+        <img class="tw-h-full tw-w-full tw-transition-opacity tw-opacity-100" width="100%" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1080/layout-engine/2023-09/01_1.png" data-pf="reset">
+    </section>
+
+    <section id="sectionA">
+        <video playsinline="" poster="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1440/layout-engine/2023-09/image_3.png" class="tw-h-full tw-object-cover" width="100%" loop="" data-pf="reset"><source src="https://cdn.grofers.com/layout-engine/2023-09/pann-animation_0.mp4" type="video/mp4" data-pf="reset"><track kind="captions" data-pf="reset"></video>
+    </section>
+     
+
 
     <!-- ---------------section second ------------------------- -->
     <section>
             <div id="sectionsecond">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-08/Web-HFS-banner_0.png" alt="masthead_web_hfs_sept" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-03/beauty-WEB.jpg" alt="masthead_web_beauty_store" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/electronics-WEB.jpg" alt="masthead_web_electronic_store" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
-                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-08/Web-HFS-banner_0.png" alt="masthead_web_hfs_sept" >
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-03/beauty-WEB.jpg" alt="masthead_web_beauty_store" >
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/electronics-WEB.jpg" alt="masthead_web_electronic_store" >
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" >
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" >
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" >
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" >
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" >
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" >
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" >
+
             </div>
     </section>
 
    
     <!--------------section three -------------- -->
     <section  id="sectionthree">
-        <div id="firstline" >
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png" alt="5 - Snacks &amp; Munchies " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png" alt="3 - Fruits &amp; Vegetables" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-4_9.png" alt="4 - Cold Drinks &amp; Juices " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png" alt="5 - Snacks &amp; Munchies " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-6_5.png" alt="6 - Breakfast &amp; Instant Food" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png" alt="7 - Sweet Tooth" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-8_4.png" alt="8 - Bakery &amp; Biscuits" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-9_3.png" alt="9 - Tea, Coffee &amp; Health Drink " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            
-        </div>
-        <div id="secondline" >
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png" alt="3 - Fruits &amp; Vegetables" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-4_9.png" alt="4 - Cold Drinks &amp; Juices " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png" alt="5 - Snacks &amp; Munchies " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png" alt="3 - Fruits &amp; Vegetables" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-6_5.png" alt="6 - Breakfast &amp; Instant Food" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png" alt="7 - Sweet Tooth" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-8_4.png" alt="8 - Bakery &amp; Biscuits" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-10.png" alt="10 - Atta, Rice &amp; Dal" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
-        </div>
+         
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png" alt="5">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-2_10.png" alt="2" >
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png" alt="3">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-4_9.png" alt="4">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png" alt="5" >
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-6_5.png" alt="6">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-2_10.png" alt="2" >
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png" alt="7" >
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-8_4.png" alt="8">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-9_3.png" alt="9">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-9_3.png" alt="9"  >
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-9_3.png" alt="9" >
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-12/paan-corner_web.png"alt="1" >
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-2_10.png" alt="2" >
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png" alt="3" >
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-4_9.png" alt="4">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png" alt="5">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png" alt="3">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-6_5.png" alt="6">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png" alt="7 ">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-8_4.png" alt="8">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-10.png" alt="10" >
+       
     </section>
 
    <!--+++++++++++++++++++++++ headings++++++++++++++++++++ -->
@@ -127,7 +209,7 @@
  
              <div class="price">
                  <p>₹95</p>
-                 <button>ADD</button>
+                 <button class="custom-button">ADD</button>
              </div>
          </div>
          <!--  -->
@@ -143,7 +225,7 @@
  
              <div class="price">
                  <p>₹95</p>
-                 <button>ADD</button>
+                 <button class="custom-button">ADD</button>
              </div>
          </div>
          <!--  -->
@@ -159,7 +241,7 @@
  
              <div class="price">
                  <p>₹95</p>
-                 <button>ADD</button>
+                 <button class="custom-button">ADD</button>
              </div>
          </div>
          <!--  -->
@@ -175,7 +257,7 @@
  
              <div class="price">
                  <p>₹95</p>
-                 <button>ADD</button>
+                 <button class="custom-button">ADD</button>
              </div>
          </div>
          <!--  -->
@@ -191,7 +273,7 @@
  
              <div class="price">
                  <p>₹95</p>
-                 <button>ADD</button>
+                 <button class="custom-button">ADD</button>
              </div>
          </div>
          <!--  -->
@@ -207,7 +289,7 @@
  
              <div class="price">
                  <p>₹95</p>
-                 <button>ADD</button>
+                 <button class="custom-button">ADD</button>
              </div>
          </div>
          <!--  -->
@@ -223,7 +305,7 @@
  
              <div class="price">
                  <p>₹95</p>
-                 <button>ADD</button>
+                 <button class="custom-button">ADD</button>
              </div>
          </div>
          <!--  -->
@@ -239,13 +321,14 @@
  
              <div class="price">
                  <p>₹95</p>
-                 <button>ADD</button>
+                 <button class="custom-button">ADD</button>
+                 
              </div>
          </div>
          <!--  -->
-         </Section>
+</Section>
 
- <footer><p>made with <img class="js-img-protect container-absolute to-all opacity-zero" src="https://t4.ftcdn.net/jpg/00/96/48/45/240_F_96484587_7lWZQz2UQKWLfiT0CMOyCnQ7OcwSmDzj.jpg" alt="Heart, love, romance or valentine's day red vector icon for apps and websites"> chandan gupta</p></footer>
+<footer><p>made with <img class="js-img-protect container-absolute to-all opacity-zero" src="https://t4.ftcdn.net/jpg/00/96/48/45/240_F_96484587_7lWZQz2UQKWLfiT0CMOyCnQ7OcwSmDzj.jpg" alt="Heart, love, romance or valentine's day red vector icon for apps and websites"> chandan gupta</p></footer>
 
 </body>
 </html>
