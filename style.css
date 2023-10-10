@@ -1,13 +1,17 @@
-*{
+ *{
     margin: 0px;
     padding: 0px;
 }
+
+/* +++++++++++++++++++++++++++++++++++++++ */
+/* ============================================ */
 /* -------------Navigation bar------------------------------- */
+
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 86px;
+    height: 6vw;
     width: 100%;
     border-bottom: 1px solid rgb(238, 238, 238);
     background-color: white;
@@ -19,70 +23,153 @@ nav{
 
 /* logo */
 #logo{
-    width: 15%;
-     height: 100%;
-    border-right: 1px solid rgb(238, 238, 238);
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
+   width: 15%;
+    height:6vw;
+   border-right: 1px solid rgb(238, 238, 238);
+   display: flex;
+   align-items: center;
 }
 #logo img{
-    height: 37px; 
+    width: 66%; 
 }
 
 /* address */
  #address{
     text-align: center;
     width: 20%;
-    margin: 0px 20px;
+   padding: 0vw 1vw;
     
  }
+ #address h2{
+    font-size: 1.6vw;  
+}
+#location{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#location img{
+    padding: .2vw;
+    height: 1vw;
+    width: 1vw;
+}
+#location p{
+   font-size: 1vw;
+}
+ 
 
  /* Search bar */
+
+ /* Animation */
+ .a{
+   margin: 1.6vw 0vw;
+   font-size: .97vw;
+   font-weight: 400;
+   color: rgb(153,153,153);
+ }
+ .searchbox{
+   height: 45%;
+   width:21vw;
+   overflow: hidden;
+   position: absolute;
+   margin-left: 3vw;
+    }
+   
+    .Tbox:first-child{
+       animation:anim 12s infinite;
+    }
+   
+    @keyframes anim{
+       0%{
+           margin-top: 0;
+       }
+   
+       20%{
+           margin-top: -.9vw;
+       }
+       40%{
+           margin-top:-3.5vw;
+       }
+       60%{
+           margin-top:-6.3vw;
+       }
+       80%{
+           margin-top:-8.9vw;
+       }
+       100%{
+           margin-top:-11.6vw;
+       }
+    }
+    /*  */
 
  #search{
     display: flex;
     border: 1px solid rgb(232, 232, 232);
     width: 35%;
     height: 50%;
-    border-radius: 12px;
+    border-radius: .83vw;
     background: rgb(248, 248, 248);
     align-items: center;
+   
  }
- #searchicon{
-    margin: 10px;
+ #searchicon img{
+    margin:.7vw;
+    height: 1vw;
+    width: 1vw;
+
+
  }
  #searchbox input{
     border: none;
     background: rgb(248, 248, 248);
+    font-size: 1vw;
  }
 
  /* logIn */
  #login button{
-  
-    margin-left: 50px;
+    cursor:pointer;
+    margin-left:3.5vw;
     border: none;
     background-color: white;
-    font-size: 20px;
+    font-size: 1.5vw;
      
  }
 /* My cart */
+
+
  #MyCart button{
     background-color: rgb(12, 131, 31);
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-    height: 52px ;
-    width: 112px;
-    border-radius: 8px;
-    margin-left: 50px;
+    height: 3vw ; /*52px*/
+    width: 7.7vw; /*112px*/
+    border-radius: .55vw; /*8*/
+    margin-left: 3.5vw; /*50px*/
  }
- #cart{
-   font-size: 16px;
-   margin: 10px;
+ .cart{
+   font-size: 1.1vw;
+   margin: .7vw;
  }
+ #carticon img{
+    height: 1.7vw;
+    width: 1.7vw;
+ }
+ #carticon img:hover{
+   animation:cartI 2s 1;
+}
+
+@keyframes cartI{
+   0%{
+       rotate:20deg;
+   }
+
+   100%{
+       margin-top: -20deg;
+   }
+    
+}
 
 
 
@@ -93,24 +180,28 @@ nav{
    align-items: center;
  }
  #sectionfirst img{
-/*    height: 300px;
-   width: 1516px; */
+   
+   margin: auto;
+   height: auto;
+   width:90vw;
+  
  }
 
 
  /* ---------------section Second -------- */
  #sectionsecond{
+   
    display: flex;
-   width: 1485px;
-   margin:27px 25px;
-   overflow: scroll;
-   justify-content: center; 
-    align-items: center;
-   display:inline-block !important;
+   width: 89vw; /* Use 100% width to fill the available space */
+   overflow-x: auto; /* Enable horizontal scrolling */
+  justify-content:flex-start; /* Align the boxes to the left*/
    white-space: nowrap;
+   margin:auto;
+   cursor: pointer;
  }
  #sectionsecond img{
-   padding-inline: 8px;
+   height:16vw;
+   margin:.5vw;
  }
 
  ::-webkit-scrollbar{
@@ -121,12 +212,18 @@ nav{
 /* -------------section three ---------------------- */
 
 #sectionthree{
-   width: 1585px;
-   margin:5px 10px;
+ 
+   width: 90vw; /* Use 100% width to fill the available space */
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center; 
+   justify-content: center;
    
 }
-#firstline img, #secondline img{
-   margin: 11px;  
+#sectionthree img{
+   margin: .7vw; 
+   height:160px; 
 }
 
 
@@ -135,114 +232,427 @@ nav{
 .heading{
    display: flex;
    justify-content: space-between;
-   width: 1464px;
-   margin:25px 45px;
+   width: 90vw;
+   margin:auto;
+   padding: 2vw 0vw;
 }
 
 .heading h2{
-   font-size:28px;
+   font-size:1.6vw;
+   font-weight: 600;
+   color: rgb(28,28,28);
 }
 
 .heading button{
     border: none;
-    font-size: 20px;
     color: rgb(12, 131, 31);
     background-color: white;
-    font-size: 20px;
+    font-size: 1.38vw;
 }
 
 /*+++++++++++++++++++++ section four+++++++++++++++++++++ */
- /* .box{
-   width: 225px;
-   height: 350px;
-   margin: 15px;
-   cursor: pointer;
-   background: rgb(255, 255, 255);
-   border: 0.5px solid rgb(232, 232, 232);
-   box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
-   border-radius: 8px;
-   overflow: hidden;
- } */
  .product{
    display: flex;
    align-items: center;
    justify-content: center;
  }
+ .product img{
+   height:10vw;
+  
+ }
 
  .time{
    display: flex;
-   margin: 15px;
+   margin: 1vw;
+ }
+ .time img{
+   height: .625vw;
+   width: .625vw;
+   margin-right: .3vw;
  }
  .time p{
-   font-size: 12px;
-   font-weight: 300;
+   font-size: .625vw;
+   font-weight: 700;
+   color: rgb(54,54,54);
+   text-transform: uppercase;
  }
 .box h2{
-font-size:27px;
-margin: 5px 10px;
+font-size:.9vw;
+margin: .35vw .7vw;
 white-space: nowrap;
 overflow: hidden; 
 text-overflow: ellipsis;
+font-weight: 600;
+color: rgb(31,31,31);
 }
 .weight{
-   font-size: 20px;
+   font-size: .9vw;
    font-weight: 400;
    color: gray;
-   margin: 20px 10px;
+   margin: 1.38vw .7vw;
 }
 .price{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin: 20px;
+   margin: 1vw;
 }
 .price p{
-   font-weight: 500;
-}
-.price button{
-   cursor: pointer;
-   width: 66px;
-   border: 1px solid rgb(49, 134, 22);
-   height: 31px;
-   color: rgb(49, 134, 22);
    font-weight: 600;
-   font-size: 13px;
+   font-size: .83vw;
 }
+.custom-button{
+   cursor: pointer;
+   width: 4.58vw;
+   border: 1px solid rgb(49, 134, 22);
+   height: 2.15vw;
+   color:rgb(49, 134, 22) ;
+   font-weight: 600;
+   font-size: .9vw;
+   border-radius: .4vw;
+   position: relative;
+   } 
+   .custom-button::before {
+      content: '- 1 +';
+      font-size: 1.6vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      background-color:rgb(49, 134, 22);
+       color: white;   
+  }
+.custom-button:hover::before{
+   display: block; 
+}
+
 
  
 
  #sectionfour {
    display: flex;
-   width: 1476px; /* Use 100% width to fill the available space */
+   width: 90%; /* Use 100% width to fill the available space */
    overflow-x: auto; /* Enable horizontal scrolling */
    justify-content: flex-start; /* Align the boxes to the left */
    white-space: nowrap;
-   margin: 5px 31px 200px 31px;
+   margin:auto;
 }
 
 .box {
-   width: 225px; /* Set a fixed width for the boxes */
-   margin: 0 15px; /* Add horizontal margin to separate boxes */
+   width: 13.1vw; /* Set a fixed width for the boxes */
+   margin: 0vw .6vw; /* Add horizontal margin to separate boxes */
    flex-shrink: 0; /* Prevent boxes from shrinking */
    box-sizing: border-box; /* Include padding and border in box sizing */
    display: inline-block; /* Display boxes inline */
    vertical-align: top; /* Align boxes to the top */
    background: rgb(255, 255, 255);
    border: 0.5px solid rgb(232, 232, 232);
-   box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
-   border-radius: 8px;
+   box-shadow: rgba(0, 0, 0, 0.04) .13vw .13vw .55vw;
+   border-radius: .55vw;
    overflow: hidden;
    white-space: normal; /* Allow text to wrap */
+   cursor: pointer;
 }
 
 /* ============== footer ================== */
 footer img{
-   height: 25px;
+   height: 1.73vw;
 }
 footer{
    display: flex;
    align-items: center;
    justify-content: center;
-   margin: 50px;
+   margin:auto;
+   padding: 2vw 0vw;
 }
+
+ 
+
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+/* ============================================= *
+
+  /* CSS for screen width greater than 1024px */
+  @media (min-width: 800px) {
+   .mobile{
+       display: none; /* Hide the small cart */
+   }
+   /* section first */
+   #sectionfirst-mobile{
+      display: none;
+   }
+   #sectionA{
+      display: none;
+   }
+  
+}
+
+/* CSS for screen width less than or equal to 1024px */
+/*   MObile And Tablet */
+@media (max-width: 800px) {
+   .laptop{
+       display: none; /* Hide the large cart */
+   }
+
+       nav{
+         background-color:white;
+   }
+
+
+   /*   +++++++++++ Navbar +++++++++ */
+   nav{
+      display: block;
+      height: 140px; 
+      border: none;     
+  }
+   /* logo  */
+    #logo{
+      display: none;
+  }
+
+  /* address */
+ #address{
+   text-align: start;
+   width: 90%;
+   margin:15px 15px 5px 15px;
+
+
+   
+}
+#address h2{
+   font-size: 20px; 
+   font-weight: 800; 
+   margin: 5px 0px;
+}
+#location{
+  display: flex;
+  justify-content:start;
+  
+}
+#location img{
+   padding: 3px;
+   height: 15px;
+   width: 15px;
+}
+#location p{
+  font-size: 15px ;
+  font-weight: 400;
+}
+/* search  */
+ #search{
+   display: none;
+ }
+
+/* Animation */
+ .a-mobile{
+   margin: 50px 0px;
+   font-size: 15px ;
+   font-weight: 400;
+   color: rgb(153,153,153);
+ }
+ .searchbox-mobile{
+   height: 40px;
+   width:50vw;
+   overflow: hidden;
+   position: absolute;
+   margin-left: 40px;
+    }
+   
+    .Tbox-mobile:first-child{
+       animation:anim 8s infinite;
+    }
+   
+    @keyframes anim{
+       0%{
+           margin-top: 0;
+       }
+   
+       20%{
+           margin-top: -37px;
+       }
+       40%{
+           margin-top:-105px;
+       }
+       60%{
+           margin-top:-170px;
+       }
+       80%{
+           margin-top:-240px;
+       }
+       100%{
+           margin-top:-308px;
+       }
+    }
+    /*  */
+
+ #search-mobile{
+    display: flex;
+    border: 1px solid rgb(232, 232, 232);
+    width: 95%;
+    height:40px;
+    border-radius: 15px;
+    background: rgb(248, 248, 248);
+    align-items: center;
+    margin: 0px 15px 15px 15px;
+   
+ }
+ #searchicon-mobile img{
+    margin:10px;
+    height:15px;
+    width: 15px;
+
+
+ }
+
+   /* logIn */
+ #login{
+   cursor:pointer;
+   margin: 10px;
+   
+}
+
+   /* ++++++++++ My Cart +++++++++++++ */
+
+     #MyCart{
+      position: fixed;
+      bottom: 3px;
+      margin: auto;
+      z-index: 100;
+     
+   }
+    
+   #MyCart button{
+     height: 33px ; 
+      width: 95vw; 
+      justify-content: space-between;
+      padding: 2vw;
+      
+     }
+   .cart{
+     font-size: 17px;
+     margin: 10px;
+   }
+    
+   #carticon{
+      display: flex;
+      align-items: center;
+   }
+   #carticon img{
+      height: 15px;
+      width: 15px;
+      margin-right:2vw;   
+   }
+   #carticon img:hover{
+     animation:cartI 2s 1;
+  }
+  
+  @keyframes cartI{
+     0%{
+         rotate:20deg;
+     }
+  
+     100%{
+         margin-top: -20deg;
+     }
+      
+  }
+  
+/*  mobile navbar  */
+
+
+ .address-acount{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ /* +++++++++++section first ++++++++++ */
+  #sectionfirst{
+   display: none;
+  }
+
+   /* ---------------section Second -------- */
+ #sectionsecond{
+   width: 100vw;  
+ }
+ #sectionsecond img{
+   height:150px;
+   margin:7px;
+ }
+
+ ::-webkit-scrollbar{
+   display: none;
+}
+ 
+     /* ++++++++++ section three +++++++++++ */
+     #sectionthree{
+        width: 100vw;  
+     }
+     #sectionthree img{
+        height:110px; 
+     }
+/* ++++++++ heading +++++++++++ */
+     .heading{
+      padding: 15px 0px;
+   }
+   
+   .heading h2{
+      font-size:17px;
+   }
+   
+   .heading button{
+       font-size:12px;
+   }
+   
+   /*+++++++++++++++++++++ section four+++++++++++++++++++++ */
+    
+    .product img{
+      height:140px;
+    }
+    .time img{
+      height: 7px;
+      width: 7px;
+    }
+    .time p{
+      font-size: 7px;
+    }
+   .box h2{
+   font-size:10px;
+   }
+   .weight{
+      font-size:9px;
+   }
+   .price{
+      margin: 10px;
+   }
+   .price p{
+      font-weight: 600;
+      font-size: 12px;
+   }
+   .custom-button{
+      width: 35px;
+      height: 17px;
+      font-size: 10px;
+      border-radius: 2px;
+      
+      
+      } 
+      .custom-button::before {
+         font-size: 15px;     
+     }
+  
+    #sectionfour {
+      width: 100%;  
+      margin-bottom: 25px;
+   }
+   
+   .box {
+      width: 125px;  
+      margin: 0px 5px; 
+      border-radius: 10px;
+     
+   }   
+   
+   }
 
